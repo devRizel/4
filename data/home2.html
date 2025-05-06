@@ -127,20 +127,20 @@
         <div data-role="content" class="animated-heading">
             <input id="searchInput" list="searchOptions" placeholder="Search..." />
             <datalist id="searchOptions">
-                <option value="Top Seller ">
-              <option value="Food">
-              <option value="Burger">
-              <option value="Spaghetti">
+                <option value="Room 1">
+                <option value="Room 2">
+                <option value="Room 3">
+                <option value="Room 4">
             </datalist>
             <script>
               const input = document.getElementById('searchInput');
               input.addEventListener('change', () => {
                 const value = input.value;
                 const links = {
-                    "Top Seller ": "bestsell.html",
-                  "Food": "food.html",
-                  "Burger": "burger.html",
-                   "Spaghetti": "spaghetti.html"
+                    "Room 1": "1room2.html",
+                  "Room 2": "2room2.html",
+                  "Room 3": "3room2.html",
+                   "Room 4": "4room2.html"
                 };
                 if (links[value]) {
                   window.location.href = links[value];
